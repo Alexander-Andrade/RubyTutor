@@ -11,6 +11,7 @@
 #   triangular(3)==6,
 #   triangular(-10)==0
 
+
 def triangular( n )
   return 0 if n <= 0
   return n*n - triangular(n - 1)
