@@ -13,6 +13,5 @@
 
 
 def triangular( n )
-  return 0 if n <= 0
-  return n*n - triangular(n - 1)
+  n <= 0 ? 0 : n*n - triangular(n - 1)
 end
