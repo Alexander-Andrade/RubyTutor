@@ -8,11 +8,11 @@
 # findNextSquare(625) --> returns 676
 # findNextSquare(114) --> returns -1 since 114 is not
 
-def find_next_square(sq)
-  num = (sq**(0.5))
+def next_square(sq)
+  num = sq**(0.5)
   int_num = num.to_i
   if int_num.is_a? Integer and int_num == num
-  	return ((int_num + 1) ** 2)
+  	return (int_num + 1) ** 2
   end
   -1
 end
