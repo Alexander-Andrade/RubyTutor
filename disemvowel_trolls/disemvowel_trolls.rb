@@ -5,5 +5,8 @@
 
 
 def disemvowel(str)
-  str.gsub(/[AaEeIiOoUu]/,"")
+  str.gsub(/[aeiou]/i,"")
 end
+
+
+puts disemvowel "AwegIefwef"
