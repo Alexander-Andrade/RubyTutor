@@ -8,10 +8,13 @@
 def delete_nth(order,max_e)
   new_order = []
   order.each do |old_el|
-  	new_order << old_el  if new_order.find_all{|new_el| new_el == old_el}.size < max_e
+    
+    if new_order.find_all{|new_el| new_el == old_el}.size < max_e do
+      new_order << old_el    
+    end
   end
   new_order
 end
 
 arr = [3, 3, 4, 4, 4]
-print delete_nth(arr, 2)
+  print delete_nth(arr, 2)
